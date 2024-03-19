@@ -35,7 +35,7 @@ docker-compose up -d
 3. 进入任意redis节点 运行`create_cluster.sh`脚本创建Redis集群：
 
 ```bash
-./create_cluster.sh
+redis-cli --cluster create 127.0.0.1:6379 127.0.0.1:6380 127.0.0.1:6381 127.0.0.1:6382 127.0.0.1:6383 127.0.0.1:6384 --cluster-replicas 1 -a passwd123
 ```
 
 4. 验证集群是否创建成功
