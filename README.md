@@ -32,11 +32,21 @@ cd redis-cluster
 docker-compose up -d
 ```
 
-3. 运行`create_cluster.sh`脚本创建Redis集群：
+3. 进入任意redis节点 运行`create_cluster.sh`脚本创建Redis集群：
 
 ```bash
 ./create_cluster.sh
 ```
+
+4. 验证集群是否创建成功
+输出如下则表示创建成功
+```bash
+[OK] All nodes agree about slots configuration.
+>>> Check for open slots...
+>>> Check slots coverage...
+[OK] All 16384 slots covered.
+```
+
 
 ## 使用说明
 

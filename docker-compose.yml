@@ -7,8 +7,8 @@ services:
     restart: always
     network_mode: "host"
     volumes:
-      - /Users/das/redis-cluster/redis-1/data:/data
-      - /Users/das/redis-cluster/redis-1/redis.conf:/usr/local/etc/redis/redis.conf
+      - ./redis-1/data:/data
+      - ./redis-1/redis.conf:/usr/local/etc/redis/redis.conf
     command: ["redis-server", "/usr/local/etc/redis/redis.conf"]
   # redis2配置
   redis2:
@@ -17,8 +17,8 @@ services:
     restart: always
     network_mode: "host"
     volumes:
-      - /Users/das/redis-cluster/redis-2/data:/data
-      - /Users/das/redis-cluster/redis-2/redis.conf:/usr/local/etc/redis/redis.conf
+      - ./redis-2/data:/data
+      - ./redis-2/redis.conf:/usr/local/etc/redis/redis.conf
     command: ["redis-server", "/usr/local/etc/redis/redis.conf"]
   # redis3配置
   redis3:
@@ -27,8 +27,8 @@ services:
     restart: always
     network_mode: "host"
     volumes:
-      - /Users/das/redis-cluster/redis-3/data:/data
-      - /Users/das/redis-cluster/redis-3/redis.conf:/usr/local/etc/redis/redis.conf
+      - ./redis-3/data:/data
+      - ./redis-3/redis.conf:/usr/local/etc/redis/redis.conf
     command: ["redis-server", "/usr/local/etc/redis/redis.conf"]
   # redis4配置
   redis4:
@@ -37,8 +37,8 @@ services:
     restart: always
     network_mode: "host"
     volumes:
-      - /Users/das/redis-cluster/redis-4/data:/data
-      - /Users/das/redis-cluster/redis-4/redis.conf:/usr/local/etc/redis/redis.conf
+      - ./redis-4/data:/data
+      - ./redis-4/redis.conf:/usr/local/etc/redis/redis.conf
     command: ["redis-server", "/usr/local/etc/redis/redis.conf"]
   # redis5配置
   redis5:
@@ -47,8 +47,8 @@ services:
     restart: always
     network_mode: "host"
     volumes:
-      - /Users/das/redis-cluster/redis-5/data:/data
-      - /Users/das/redis-cluster/redis-5/redis.conf:/usr/local/etc/redis/redis.conf
+      - ./redis-5/data:/data
+      - ./redis-5/redis.conf:/usr/local/etc/redis/redis.conf
     command: ["redis-server", "/usr/local/etc/redis/redis.conf"]
   # redis6配置
   redis6:
@@ -57,6 +57,6 @@ services:
     restart: always
     network_mode: "host"
     volumes:
-      - /Users/das/redis-cluster/redis-6/data:/data
-      - /Users/das/redis-cluster/redis-6/redis.conf:/usr/local/etc/redis/redis.conf
+      - ./redis-6/data:/data
+      - ./redis-6/redis.conf:/usr/local/etc/redis/redis.conf
     command: ["redis-server", "/usr/local/etc/redis/redis.conf"]
